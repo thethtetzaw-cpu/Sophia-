@@ -1,0 +1,126 @@
+#fullmenu ul{
+list-style-type: None;
+background-color: yellow;
+padding-left: 0 ;
+
+}
+
+#fullmenu ul li{
+    display: inline;
+    
+}
+
+#fullmenu ul li a{
+    padding: 10px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+    color: #303030;
+    font-family: Arial;
+}
+
+#fullmenu ul li a:hover{
+    background-color: #585917;
+    color : #FFFFFF
+}
+
+header img{
+    width: 200px;
+}
+
+#hours {
+    width: 275px;
+    border: 1px solid black;
+}
+
+#hours td{
+    border: 1px solid black;
+}
+
+#hours th{
+    border: 1px solid black;
+}
+
+*{
+    box-sizing: border-box;
+}
+ main,aside {
+    padding: 5px;
+ }
+main{
+    background:#fdffc2;
+}
+
+aside{
+    background:#74776b ;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+}
+
+@media all and (min-width: 480px) {
+    section{
+        flex-direction: row;
+    }
+   
+}
+
+#fullmenu{
+    display: none;
+}
+
+#burgermenu{
+    position: relative;
+    display: block;
+    height: 50px;
+    width: 50px;
+    margin: 0 auto;
+}
+
+#burgermenu #burgermenulinks{
+    visibility: hidden;
+    position: absolute;
+    list-style-type: none;
+    text-align: center;
+    padding: 25px 10px;
+    width: 150px;
+    background-color: #9e9e9e;
+    
+}
+
+#burgermenu:hover #burgermenulinks {
+    visibility: visible;
+    display: block;
+    margin: 0 auto;
+    left: -61px;
+    color : #FFFFFF
+    
+}
+
+
+
+ #burgermenu ul li a{
+    color: #171717;
+    padding: 5px;
+    text-decoration: none;
+    display: block;
+
+ }
+
+ #burgermenu ul li a:hover{
+    
+    background-color: #585917;
+    color : #FFFFFF;
+  }
+ 
+
+  @media all and (min-width: 480px) {
+    #fullmenu{
+        display: block;
+    }
+   #burgermenu{
+    display: none ;
+   }
+}  
